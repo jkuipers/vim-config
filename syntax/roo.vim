@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:	Spring ROO Command File (http://www.springsource.org/roo)
-" Maintainer:	Joris Kuipers (joriskuipers@xs4all.nl)
-" Last Change:	October 28 2009
+" Maintainer:	Joris Kuipers (joriskuipers@gmail.com)
+" Last Change:	August 31 2010
 " Simple syntax file, doesn't try to list the actual Roo commands as these
 " will expand with each new Roo version but uses generic syntax instead.
 
@@ -16,7 +16,7 @@ elseif exists("b:current_syntax")
 endif
 
 syn match   rooCommand          "^[a-z ]*\(\n\|\s\)"
-syn match   rooLineComment      "^\(//\|;\).*" contains=rooTodo,@Spell
+syn match   rooLineComment      "^\(//\|;\|#\).*" contains=rooTodo,@Spell
 syn region  rooComment          start="/\*" end="\*/" contains=rooTodo,@Spell
 syn keyword rooTodo             contained TODO FIXME XXX
 syn region  rooPlaceholder      matchgroup=Delimiter start="\${" end="}"

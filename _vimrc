@@ -1,9 +1,14 @@
 set nocp bs=2 ru sc sm expandtab vi=\"100,'50,rA: ar wmnu ch=2 ls=2
 set nobackup aw sw=4 ts=4 sta gd ww+=[,] shm+=I fdc=5 nojs so=1 mh
-set listchars=tab:»·,trail:·,eol:$ smc=5000
+set listchars=tab:»·,trail:·,eol:$ smc=5000 go-=M
+set dir=.,C:\Users\kuip\AppData\Local\Temp
+" vim 7.3 persistent undo options:
+set undodir=C:\Users\kuip\VimUndo undofile
 
 " Make p in Visual mode replace the selected text with the "" register.
 vnoremap p <Esc>:let current_reg = @"<CR>gvs<C-R>=current_reg<CR><Esc>
+
+map <F2> :NERDTreeToggle<CR>
 
 imap <S-CR> <Esc>o
 imap <C-S-CR> <Esc>O
@@ -19,7 +24,7 @@ autocmd BufReadPost *
 com! CD cd %:p:h
 
 " for xml plugin:
-let xml_jump_string="``"
+"let xml_jump_string="``"
 
 filetype plugin indent on
 syntax on
@@ -33,7 +38,7 @@ function MyDiff()
   let opt = ''
   if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
   if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
-  silent execute '!C:\Progra~1\Vim\vim72\diff -a ' . opt . '"' . v:fname_in . '" "' . v:fname_new . '" > "' . v:fname_out . '"'
+  silent execute '!C:\Progra~2\Vim\vim73\diff -a ' . opt . '"' . v:fname_in . '" "' . v:fname_new . '" > "' . v:fname_out . '"'
 endfunction
 
 let g:miniBufExplMapCTabSwitchBufs = 1

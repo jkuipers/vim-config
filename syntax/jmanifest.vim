@@ -19,8 +19,8 @@ else
   syn match jmanifestValue        /.*\%<74c/ contained nextgroup=jmanifestCont skipnl
   syn match jmanifestExtraChars   /\%>72c.*$/
 endif
-syn match jmanifestName         /^[A-Za-z0-9][A-Za-z0-9\-_]\{,69}\ze: / nextgroup=jmanifestColon
-syn match jmanifestColon        /: / contained nextgroup=jmanifestValue
+syn match jmanifestName         /^[A-Za-z0-9][A-Za-z0-9\-_]\{,69}\ze: \?/ nextgroup=jmanifestColon
+syn match jmanifestColon        /: \?/ contained nextgroup=jmanifestValue
 
 " nice and short, but causes issues when very large with too little history
 "syn match jmanifestValue        /\_.\{-}\ze\_^\([^ ]\|\%$\)/ contained

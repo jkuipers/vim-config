@@ -55,8 +55,8 @@ syn region aptMonospace     start="<<<" end=">>>" oneline
 
 syn region aptAnchor        start="{"  end="}"  oneline
 syn region aptLink          start="{{" end="}}" oneline
-syn region aptAnchor        matchgroup=aptAnchor start="{{{\@=" end="}}" oneline contains=aptInnerLink
-syn region aptInnerLink     contained start="{" end="}"
+syn region aptAnchor        matchgroup=aptAnchor start="{{{\@=" end="}}" contains=aptInnerLink
+syn region aptInnerLink     contained start="{" end="}" oneline 
 
 syn match  aptBulletList    /^\s\+\*/
 syn region aptDefIndex      matchgroup=aptDefList start="\s\["   end="]"  oneline
