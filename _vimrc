@@ -41,4 +41,5 @@ function MyDiff()
   silent execute '!C:\Progra~2\Vim\vim73\diff -a ' . opt . '"' . v:fname_in . '" "' . v:fname_new . '" > "' . v:fname_out . '"'
 endfunction
 
+let java_allow_cpp_keywords = 1
 let g:miniBufExplMapCTabSwitchBufs = 1

@@ -1,6 +1,7 @@
 set guifont=Lucida_Console:h9:cANSI
 set lines=50 columns=105 guioptions-=T
-colorscheme murphy
+colorscheme asu1dark
+"colorscheme murphy
 highlight SpecialKey guifg=grey
 
 " use max width for trace files
