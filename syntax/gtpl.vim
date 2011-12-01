@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:	GTPL (Groovy Template) HTML template
-" Maintainer:	Joris Kuipers (joriskuipers@xs4all.nl)
+" Maintainer:	Joris Kuipers (joriskuipers@gmail.com)
 " Last Change:	2009 Sep 20
 
 " For version 5.x: Clear all syntax items

@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:	Java Manifest file (MANIFEST.MF)
-" Maintainer:	Joris Kuipers (joriskuipers@xs4all.nl)
+" Maintainer:	Joris Kuipers (joriskuipers@gmail.com)
 " Last Change:	25th June 2008
 
 " =============================================================================

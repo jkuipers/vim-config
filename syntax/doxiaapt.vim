@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:	Doxia APT file as used by Maven (http://maven.apache.org/doxia/references/apt-format.html)
-" Maintainer:	Joris Kuipers (joriskuipers@xs4all.nl)
+" Maintainer:	Joris Kuipers (joriskuipers@gmail.com)
 " Last Change:	7th February 2010
 
 " =============================================================================

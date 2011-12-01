@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:	SpringSource dm Server trace log
-" Maintainer:	Joris Kuipers (joriskuipers@xs4all.nl)
+" Maintainer:	Joris Kuipers (joriskuipers@gmail.com)
 " Last change:	4th November 2008
 
 " =============================================================================

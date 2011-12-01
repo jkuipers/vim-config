@@ -8,20 +8,21 @@ augroup filetypedetect
   " commented out, supported natively by vim 7.3 now with different
   " maintainer and files (kept old ones just in case)
   "au! BufRead,BufNewFile *.md           setf mkd
-  au! BufRead,BufNewFile *.jspx		    setf jsp
-  au! BufRead,BufNewFile *.tagx		    setf jsp
-  au! BufRead,BufNewFile *.apt		    setf doxiaapt
-  au! BufRead,BufNewFile *.ddl		    setf sql
-  au! BufRead,BufNewFile *.vm		    setf velocity
-  au! BufRead,BufNewFile *.ftl		    setf ftl
-  au! BufRead,BufNewFile *.gradle	    setf groovy
-  au! BufRead,BufNewFile *.gant 	    setf groovy
+  au! BufRead,BufNewFile *.jspx         setf jsp
+  au! BufRead,BufNewFile *.tagx         setf jsp
+  au! BufRead,BufNewFile *.apt          setf doxiaapt
+  au! BufRead,BufNewFile *.ddl          setf sql
+  au! BufRead,BufNewFile *.vm           setf velocity
+  au! BufRead,BufNewFile *.ftl          setf ftl
+  au! BufRead,BufNewFile *.gradle       setf groovy
+  au! BufRead,BufNewFile *.gant         setf groovy
   au! BufRead,BufNewFile *.gtpl         setf gtpl
-  au! BufRead,BufNewFile *.json 	    setf json
-  au! BufNewFile,BufRead *.roo		    setf roo
-  au! BufNewFile,BufRead MANIFEST.MF	setf jmanifest
+  au! BufRead,BufNewFile *.json         setf json
+  au! BufRead,BufNewFile *.avpr         setf json
+  au! BufNewFile,BufRead *.roo          setf roo
+  au! BufNewFile,BufRead MANIFEST.MF    setf jmanifest
   " AspectJ 
-  au! BufNewFile,BufRead *.aj		    setf aj 
+  au! BufNewFile,BufRead *.aj           setf aj 
   " dm Server types:
   au! BufNewFile,BufRead TEST.MF        let b:jmanifest_ignore_line_length=1 | setf jmanifest
   au! BufNewFile,BufRead template.mf    let b:jmanifest_ignore_line_length=1 | setf jmanifest
@@ -34,5 +35,8 @@ augroup filetypedetect
   " SpringSource training files:
   au! BufNewFile,BufRead */lab/docs/instructions.xml    setf docbkxml
   au! BufNewFile,BufRead */modules/*/instructions/*.xml setf docbkxml
+
   au! BufNewFile,BufRead *.confluence   setf confluencewiki
+  au! BufRead,BufNewFile *.textile      setf textile
+  au! BufRead,BufNewFile *.io           setf io
 augroup END
