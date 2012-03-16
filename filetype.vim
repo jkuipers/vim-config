@@ -39,4 +39,5 @@ augroup filetypedetect
   au! BufNewFile,BufRead *.confluence   setf confluencewiki
   au! BufRead,BufNewFile *.textile      setf textile
   au! BufRead,BufNewFile *.io           setf io
+  au! BufRead,BufNewFile *.md           setf markdown
 augroup END

@@ -1,12 +1,12 @@
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles() 
+call pathogen#infect()
 
 set nocp bs=2 ru sc sm expandtab vi=\"100,'50,rA: ar wmnu ch=2 ls=2
 set nobackup aw sw=4 ts=4 sta gd ww+=[,] shm+=I nojs so=1 mh
 set listchars=tab:»·,trail:·,eol:$ smc=5000 go-=M
-set dir=.,C:\Users\kuip\AppData\Local\Temp
+set dir=.,D:\Temp
+set wildignore+=*.class,target,.git,.svn
 " vim 7.3 persistent undo options:
-set undodir=C:\Users\kuip\VimUndo undofile
+set undodir=D:\data\jorisk\VimUndo undofile
 " for Git:
 "set statusline+=%{fugitive#statusline()}
 
